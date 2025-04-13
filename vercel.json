@@ -1,6 +1,9 @@
 {
+  "version": 2,
   "framework": "nextjs",
-  "buildCommand": "next build",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
   "cleanUrls": true,
   "trailingSlash": true,
   "regions": ["all"],

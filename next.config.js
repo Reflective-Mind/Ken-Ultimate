@@ -7,7 +7,9 @@ const nextConfig = {
   
   // Configure asset handling
   images: {
+    unoptimized: true,
     disableStaticImages: true,
+    domains: ['localhost'],
   },
   
   // Custom webpack configuration to handle Three.js properly
@@ -25,6 +27,9 @@ const nextConfig = {
 
     return config;
   },
+
+  // Output as a standalone app to improve deployment compatibility
+  output: 'standalone',
 };
 
 module.exports = nextConfig; 
